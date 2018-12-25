@@ -1,4 +1,3 @@
-# DRLND_P2_Continous-Control
 [image001]: ./images/RL_illustration.png "RL Illustration"
 [image002]: ./images/DDPG_pseudo_code.png "DDPG pseudo code"
 [image003]: ./images/DDPG_illustration.png "DDPG_illustration"
