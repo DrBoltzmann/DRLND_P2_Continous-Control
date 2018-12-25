@@ -41,7 +41,7 @@ https://spinningup.openai.com/en/latest/algorithms/ddpg.html
 https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-i-q-learning-sarsa-dqn-ddpg-72a5e0cb6287
 
 RL starts with the classic concept of an agent acting in an environment and receiving a reward:
-[image001]
+![alt text][image001]
 
 In essence, instead of solving for a specific (state, action) based on a defined policy (as is common in conventional RL), DDPG looks to modify and optimize the policy, hence the use of policy gradients. DDPG learns a Q-function and a policy, using off-policy data and the Bellman equation to learn the Q-function, and then the Q-function is used to learn the policy required to solve the environment. This allows for a continuous environment to be solved, where the the number of (action, state) is too large to be effectively solved due to computational size. A key element of DDPG is the use of Actor-Critic neural network models to drive evaluation of the decisions in the environment.
 
