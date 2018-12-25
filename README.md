@@ -47,7 +47,7 @@ In essence, instead of solving for a specific (state, action) based on a defined
 
 The pseudo code for DDPG is given here:
 
-[image002]
+![alt text][image002]
 
 In the code implementation view, DDPG has four main components:
 
@@ -58,14 +58,14 @@ In the code implementation view, DDPG has four main components:
 
 Initially, the Actor and Critic networks are initialized randomly. At each time-step, the current state is fed into the actor network, a value is then returned which if fed into the noise function of the Agent. Taking this action naturally leads to a new state value and associated reward. As with Deep Q-Learning, the temporal relationship between actions and rewards is essential to contextualizing the relationship between action sequences and reward in the environment. The Agent includes a Replay Buffer function, which stores the history of: State, Action, Reward, NextState. Conceptually DDGP is illustrated in the following diagram:
 
-[image003]
+![alt text][image003]
 
 A random sample is taken from the Replay Buffer, and fed to the Critic Network, which then evaluates with the new state with an action from the Actor network, which ultimately provides the new state. The Replay Buffers essentially stores experiences, and is sampled from to direct new actions. In other words, it learns to take new actions based on previous experiences. To implement stable learning behavior, the Replay Buffer must be large to contain enough experiences to be useful. A trade-off needs to exist so that the algorithm doesn't use only the the very-most recent data, since this would logically lead to overfit of recent actions, but not generalize well across all action experiences. Therefore it is essential that a random sample of experiences be taken to direct new actions. The Critic is evaluated with the new state, based on the taken action from the Actor, in order to approximate the next reward. With the policy-based approach, the Actor learns how to act by maximizing reward and thereby estimating the optimal policy. Here gradient ascent is used (traditionally gradient descent is used in deep learning optimization methods). With the value-based approach, the Critic estimate the cumulative reward of the (state, action) sets.
 
 ## Code Implementation
 A vanilla implementation of DDPG, following from example DDPG code was used (https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal). The code is implemented in three files, and an overview of the main functions included in each file is shown below:
 
-[image004]
+![alt text][image004]
 
 ### DDPG
 The Unity environment is loaded and main libraries imported. The DDPG function is defined which implements the DDPG algorithm, and the Agent is trained. The training results are also generated here to evaluate the training evolution and check if the environment has been solved or not.
@@ -82,12 +82,12 @@ To explore and tune neural network fully connected unit sizes and Agent hyper-pa
 
 Below is a sampling of selected training results showing the relative difference between fully connected unit layer sizes and seed values.
 
-[image005]
-[image006]
-[image008]
-[image009]
-[image0010]
-[image0011]
+![alt text][image005]
+![alt text][image006]
+![alt text][image008]
+![alt text][image009]
+![alt text][image0010]
+![alt text][image0011]
 
 The Training History and Evolution are in the table and plot below. The Agent could achieve an average over 100 episodes of over 30 after 300 episodes. Hyper-parameter tuning mainly involved modification of the fully connected units in the neural network and the random seed value. The following parameters appeared to be most likely to produce a successful training run:
 
@@ -112,5 +112,5 @@ Environment solved in 126 episodes!	Average Score: 30.06
 
 The full training history out to 400 episodes is shown below:
 
-[image0012]
+![alt text][image0012]
 
