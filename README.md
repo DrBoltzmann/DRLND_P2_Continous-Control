@@ -82,7 +82,6 @@ To explore and tune neural network fully connected unit sizes and Agent hyper-pa
 
 Below is a sampling of selected training results showing the relative difference between fully connected unit layer sizes and seed values.
 
-![alt text][image005]
 ![alt text][image006]
 ![alt text][image008]
 ![alt text][image009]
