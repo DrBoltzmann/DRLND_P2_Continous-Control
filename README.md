@@ -95,23 +95,12 @@ The Training History and Evolution are in the table and plot below. The Agent co
 |-----------|-----------|------|
 | 300       | 150       |  40  |
 
-| Layer | In         | Out         |
-|-------|------------|-------------|
-| fc1   | state_size | 64          |
-| fc2   | 64         | 64          |
-| fc3   | 64         | action_size |
-
 ### Training Results
 
-Based on the chosen parameters, the following training results were achieved, with an average score of 30 achieved in ... episodes.
-
-Episode 100	Average Score: 5.67	Score: 16.420
-Episode 200	Average Score: 26.93	Score: 30.610
-Episode 226	Average Score: 30.06	Score: 34.850
-Environment solved in 126 episodes!	Average Score: 30.06
+Based on the chosen parameters, the following training results were achieved, with an average score of 30.06 achieved in 126 episodes.
 
 | Episode | Avg Score | Score  |
-|---------|-----------|-=------|
+|---------|-----------|--------|
 | 100     | 5.67      | 16.420 |
 | 200     | 26.93     | 30.610 |
 | 226     | 30.06     | 34.850 |
