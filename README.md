@@ -95,6 +95,12 @@ The Training History and Evolution are in the table and plot below. The Agent co
 |-----------|-----------|------|
 | 300       | 150       |  40  |
 
+| Layer | In         | Out         |
+|-------|------------|-------------|
+| fc1   | state_size | 64          |
+| fc2   | 64         | 64          |
+| fc3   | 64         | action_size |
+
 ### Training Results
 
 Based on the chosen parameters, the following training results were achieved, with an average score of 30 achieved in ... episodes.
