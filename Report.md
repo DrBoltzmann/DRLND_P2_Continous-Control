@@ -108,3 +108,7 @@ The full training history out to 400 episodes is shown below:
 
 ![alt text][image0012]
 
+## Future Directions
+
+D4PG : 2018 algorithm that applies the distributional approach to a DDPG with an asynchronous architecture
+https://arxiv.org/pdf/1804.08617.pdf
