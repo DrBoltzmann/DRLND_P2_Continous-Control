@@ -110,5 +110,16 @@ The full training history out to 400 episodes is shown below:
 
 ## Future Directions
 
+In order to improve upon the performance of the current DDPG implementation, we could instead consider the D4PG approach.
+D4PG adds distributional updates to the base DDPG algorithm and uses multiple distributed workers, all write into the same replay table. 
+
 D4PG : 2018 algorithm that applies the distributional approach to a DDPG with an asynchronous architecture
 https://arxiv.org/pdf/1804.08617.pdf
+
+The advange of D4PG as compared with DDPG is a more stable learning signal, and comparisions have shown D4PG performs better than conventional DDPG over a range of tasks.
+
+DeepMind Control Suite
+https://arxiv.org/abs/1801.00690
+https://www.researchgate.net/publication/322221208_DeepMind_Control_Suite
+
+In the DeepMind Control Suite paper, a suite of tasks were evaluated with three algorithims: A3C, DDPG and D4PG. It was shown that D4PG provided greater overall return and a fast learning rate as compared with DDPG, and much better than A3C. One limitation of this study is that hyperparameters were not optimized specifically for each algroithm, but it shows the added benefit of D4PG.
