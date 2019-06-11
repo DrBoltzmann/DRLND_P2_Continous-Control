@@ -29,15 +29,11 @@ Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/
 ## Installation Dependencies
 
 The following packages are required to run the program and can be installed via the pip command:
-
-unityagents
-numpy
-torch
+* unityagents
+* numpy
+* torch
 
 ## Code Execution
-In order to run the program, access the Jupyter Notebook: Continuous_Control_DDPG.ipynb
-Run the notebook cells using the play command. Run the code:
-
-scores = ddpg()
-
-In order to train the agent and observe the training output.
+* In order to run the program, access the Jupyter Notebook: Continuous_Control_DDPG.ipynb
+* Run the notebook cells using the play command.
+* In order to train the agent and observe the training output, run the code: scores = ddpg()
